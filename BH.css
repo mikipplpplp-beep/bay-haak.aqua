@@ -1193,6 +1193,101 @@ nav a:hover::after {
     }
 }
 
+@media (max-width: 500px) {
+    .catalog {
+        margin-top: 56px;
+    }
+
+    .catalog h2 {
+        font-size: 32px;
+        margin-bottom: 24px;
+    }
+
+    .catalog-slider {
+        gap: 6px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .products-wrapper {
+        width: min(90vw, 320px);
+        height: 460px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .left,
+    .right {
+        display: none;
+    }
+
+    .center {
+        width: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        opacity: 1;
+        z-index: 3;
+    }
+
+    .product-card {
+        padding: 18px 14px 16px;
+        border-radius: 24px;
+        background: rgba(255, 255, 255, 0.35);
+        border: 1px solid rgba(255, 255, 255, 0.35);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06);
+    }
+
+    .product-card img {
+        height: 210px;
+    }
+
+    .product-card h3 {
+        font-size: 18px;
+        margin-bottom: 6px;
+    }
+
+    #left-volume,
+    #center-volume,
+    #right-volume {
+        font-size: 14px;
+        margin-bottom: 8px;
+    }
+
+    .product-text {
+        font-size: 13px;
+        line-height: 1.35;
+        min-height: 36px;
+    }
+
+    .slider-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+        flex-shrink: 0;
+        z-index: 5;
+    }
+
+    .slider-btn.prev {
+        margin-right: -6px;
+    }
+
+    .slider-btn.next {
+        margin-left: -6px;
+    }
+
+    .slider-dots {
+        margin-top: 22px;
+        gap: 8px;
+    }
+
+    .dot {
+        width: 10px;
+        height: 10px;
+    }
+}
+
 .contacts {
     margin-top: 90px;
     padding: 60px;
