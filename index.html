@@ -422,30 +422,40 @@
             <h2>Наша продукция</h2>
 
             <div class="catalog-slider">
-                <button class="slider-btn prev">❮</button>
-                <div class="products-wrapper">
+                <button class="slider-btn prev" aria-label="Предыдущий товар">❮</button>
 
+                <div class="products-wrapper">
                     <div class="product-card left" id="left-card">
-                        <img id="left-img" src="">
-                        <h3 id="left-title"></h3>
-                        <p id="left-volume"></p>
+                        <img id="left-img" src="" alt="">
+                        <div class="card-content">
+                            <h3 id="left-title"></h3>
+                            <p id="left-volume"></p>
+                            <p id="left-text" class="product-text"></p>
+                        </div>
                     </div>
 
                     <div class="product-card center" id="center-card">
-                        <img id="center-img" src="">
-                        <h3 id="center-title"></h3>
-                        <p id="center-volume"></p>
+                        <img id="center-img" src="" alt="">
+                        <div class="card-content">
+                            <h3 id="center-title"></h3>
+                            <p id="center-volume"></p>
+                            <p id="center-text" class="product-text"></p>
+                        </div>
                     </div>
 
                     <div class="product-card right" id="right-card">
-                        <img id="right-img" src="">
-                        <h3 id="right-title"></h3>
-                        <p id="right-volume"></p>
+                        <img id="right-img" src="" alt="">
+                        <div class="card-content">
+                            <h3 id="right-title"></h3>
+                            <p id="right-volume"></p>
+                            <p id="right-text" class="product-text"></p>
+                        </div>
                     </div>
-
                 </div>
-                <button class="slider-btn next">❯</button>
+
+                <button class="slider-btn next" aria-label="Следующий товар">❯</button>
             </div>
+
             <div class="slider-dots"></div>
         </section>
 
